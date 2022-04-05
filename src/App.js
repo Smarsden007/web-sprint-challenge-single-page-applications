@@ -9,15 +9,15 @@ import Home from "./Components/Homepage";
 const App = () => {
   return (
     <div className="header">
-      <h1>Lets build the best pizza you've ever had!!!</h1>
+      <h1>Lets build the best pizza you've ever hja</h1>
       <nav>
-      <router-link to="/"><button id="home-button">Home</button></router-link>
-      <router-link to="/pizza"><button id="order-pizza">Order Pizza!</button></router-link>
+      <Link to="/"><button id="home-button">Home</button></Link>
+      <Link to="/pizza"><button id="order-pizza">Order Pizza!</button></Link>
       </nav>
-      <router-switch>
+      <Switch>
       <Route path="/pizza" component={Form} />
         <Route path="/" component={Home} />
-      </router-switch>
+      </Switch>
     </div>
   );
 };
